@@ -5,8 +5,8 @@ document.body.appendChild(getSumBtn);
 const getSum = () => {
 	let ans=document.querySelectorAll(".price");
 	let sum=0;
- ans.forEach(el => {
-    sum += parseInt(el.textContent);
+ ans.forEach(price => {
+    sum += parseInt(price.textContent);
   });
 
 //Add your code here
