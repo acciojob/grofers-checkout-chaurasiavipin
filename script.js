@@ -19,7 +19,7 @@ function calculateTotal() {
   newRow.id = "totalRow";
 
   const totalCell = document.createElement("td");
-  totalCell.colSpan = 2;
+  totalCell.colSpan = 6;
   totalCell.textContent = "Total Price: ₹" + total;
 
   newRow.appendChild(totalCell);
