@@ -1,33 +1,33 @@
-// function calculateTotal() {
-//   const priceElements = document.querySelectorAll(".prices");
-//   let total = 0;
+function calculateTotal() {
+  const priceElements = document.querySelectorAll(".prices");
+  let total = 0;
 
-//   priceElements.forEach(prices => {
-//     const value = parseFloat(prices.textContent);
-//     if (!isNaN(value)) {
-//       total += value;
-//     }
-//   });
+  priceElements.forEach(prices => {
+    const value = parseFloat(prices.textContent);
+    if (!isNaN(value)) {
+      total += value;
+    }
+  });
 
-//   // Remove existing total row if already added
-//   const oldRow = document.getElementById("totalRow");
-//   if (oldRow) {
-//     oldRow.remove();
-//   }
+  // Remove existing total row if already added
+  const oldRow = document.getElementById("totalRow");
+  if (oldRow) {
+    oldRow.remove();
+  }
 
-//   const newRow = document.createElement("tr");
-//   newRow.id = "totalRow";
+  const newRow = document.createElement("tr");
+  newRow.id = "totalRow";
 
-//   const totalCell = document.createElement("td");
-//   totalCell.colSpan = 6;
-//   totalCell.textContent = "Total Price: ₹" + total;
+  const totalCell = document.createElement("td");
+  totalCell.colSpan = 6;
+  totalCell.textContent = "Total Price: ₹" + total;
 
-//   newRow.appendChild(totalCell);
+  newRow.appendChild(totalCell);
 
-//   // Append to table
-//   const table = document.querySelector("table");
-//   table.appendChild(newRow);
-// }
+  // Append to table
+  const table = document.querySelector("table");
+  table.appendChild(newRow);
+}
 
 function calculateTotal() {
   // Step 1: Get all price elements
@@ -49,7 +49,7 @@ function calculateTotal() {
   // Step 5: Create one cell and set colspan to 2
   const cell = document.createElement("td");
   cell.colSpan = 2; // so it takes full row
-  cell.style.fontWeight = "bold";
+  
   cell.textContent = `Total: ₹${total}`;
 
   // Step 6: Add the cell to the row and row to the table
