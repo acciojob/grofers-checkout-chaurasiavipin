@@ -1,34 +1,22 @@
-<body>
-  <table style="width: 100%">
-    <caption>Monthly savings</caption>
-    <tr>
-      <th>Item</th>
-      <th>Prices in Rs</th>
-    </tr>
-    <tr>
-      <td class="item">Tea</td>
-      <td class="prices">50</td>
-    </tr>
-    <tr>
-      <td class="item">Coffee</td>
-      <td class="prices">70</td>
-    </tr>
-    <tr>
-      <td class="item">Biscuits</td>
-      <td class="prices">100</td>
-    </tr>
-    <tr>
-      <td class="item">Rice</td>
-      <td class="prices">130</td>
-    </tr>
-    <tr>
-      <td class="item">Milk</td>
-      <td class="prices">50</td>
-    </tr>
-  </table>
+<table id="groceryTable" border="1">
+  <tr>
+    <th>Item</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td class="item">Apples</td>
+    <td class="prices">40</td>
+  </tr>
+  <tr>
+    <td class="item">Bananas</td>
+    <td class="prices">20</td>
+  </tr>
+  <tr>
+    <td class="item">Milk</td>
+    <td class="prices">60</td>
+  </tr>
+</table>
 
-  <!-- Add this button below the table -->
-  <button onclick="calculateTotal()">Show Total Price</button>
+<br>
 
-  <script type="text/javascript" src="script.js"></script>
-</body>
+<button onclick="calculateTotal()">Calculate Total</button>
