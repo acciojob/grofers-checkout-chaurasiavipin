@@ -31,7 +31,7 @@ function calculateTotal() {
 
 function calculateTotal() {
   // Step 1: Get all price elements
-  const priceElements = document.querySelectorAll(".prices");
+  const priceElements = document.querySelectorAll(".price");
 
   // Step 2: Initialize total to 0
   let total = 0;
