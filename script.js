@@ -1,4 +1,5 @@
 function calculateTotal() {
+	const pricelements = document.querySelectorAll("#ans");
   const priceElements = document.querySelectorAll(".prices");
   let total = 0;
 
