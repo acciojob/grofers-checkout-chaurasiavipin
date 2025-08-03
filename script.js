@@ -50,7 +50,7 @@ function calculateTotal() {
   const cell = document.createElement("td");
   cell.colSpan = 2; // so it takes full row
   
-  cell.textContent = `Total: ₹${total}`;
+  cell.textContent = `total price ₹${total}`;
 
   // Step 6: Add the cell to the row and row to the table
   newRow.appendChild(cell);
